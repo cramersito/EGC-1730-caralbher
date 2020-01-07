@@ -19,6 +19,10 @@ before_script:
 - psql -U postgres -c "ALTER USER decide CREATEDB"
 - python manage.py migrate
 script: 
+<<<<<<< HEAD
 - python manage.py test 
+=======
+- python manage.py test store
+>>>>>>> desarrollo
 addons:
     postgresql: "9.6"
